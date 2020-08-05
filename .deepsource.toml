@@ -1,0 +1,18 @@
+version = 1
+
+test_patterns = ["test/**"]
+
+exclude_patterns = ["examples/**"]
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+
+  [analyzers.meta]
+  ecma_version = "2017"
+  module_system = "commonjs"
+  style_guide = "standard"
+  environment = [
+    "nodejs",
+    "browser"
+  ]
